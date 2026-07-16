@@ -1,9 +1,11 @@
 /* =========================================================
    IMMUNIZATION: Disable Chabad's container query styles
-   Targets: 7411646, 7421598, 7382223, 7387264
+   Targets: Bourbon Tasting (7411646) & Waitlist (7421598)
 ========================================================= */
-html:has(form:is([id="7411646"], [id="7421598"])),
-html:has(form:is([id="7411646"], [id="7421598"])) body {
+html:has(form[id="7411646"]),
+html:has(form[id="7411646"]) body,
+html:has(form[id="7421598"]),
+html:has(form[id="7421598"]) body {
     --primary-form-color: initial !important;
 }
 /* =========================================================
