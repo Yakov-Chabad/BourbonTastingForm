@@ -1,14 +1,4 @@
 /* =========================================================
-   IMMUNIZATION: Disable Chabad's container query styles
-   Targets: Bourbon Tasting (7411646) & Waitlist (7421598)
-========================================================= */
-html:has(form[id="7411646"]),
-html:has(form[id="7411646"]) body,
-html:has(form[id="7421598"]),
-html:has(form[id="7421598"]) body {
-    --primary-form-color: initial !important;
-}
-/* =========================================================
    MODERN FORM STYLING - CHABADONE
    Target: Bourbon Tasting Event (ID: 7411646)
    Theme: Frosted Cream Card over Black/Gold Texture
