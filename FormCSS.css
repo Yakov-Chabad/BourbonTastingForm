@@ -1,7 +1,7 @@
 <!-- Form Shield: Blocks Chabad's JS from altering custom-designed forms -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const customForms = ["7411646", "7421598", "7382223", "7387264"];
+    const customForms = ["7411646", "7421598"];
     if (customForms.some(id => document.querySelector('form[id="' + id + '"]'))) {
       window.__formInteractionsInitialized = true;
     }
