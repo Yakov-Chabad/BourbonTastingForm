@@ -5,7 +5,6 @@
 ========================================================= */
 
 /* --- 0. CRUCIAL: Enforce Jotform Conditional Logic & Hidden Fields First --- */
-/* High-specificity override to guarantee Jotform hidden classes and conditions always win */
 form[id="7411646"] .hide,
 form[id="7411646"] .hidden,
 form[id="7411646"] .form-line-hidden,
@@ -39,7 +38,6 @@ html:has(form[id="7411646"]) body {
     overflow-x: hidden !important;
 }
 
-/* THE MASTER UN-FLOAT: Strips ChabadOne's legacy left-aligned wrappers */
 html:has(form[id="7411646"]) #content,
 html:has(form[id="7411646"]) #BodyContainer,
 html:has(form[id="7411646"]) .body_wrapper,
@@ -61,7 +59,6 @@ html:has(form[id="7411646"]) #formContainer {
     box-sizing: border-box !important;
 }
 
-/* Center the form block */
 form[id="7411646"] {
     font-family: 'Montserrat', 'Open Sans', Arial, sans-serif !important;
     color: #333 !important;
@@ -74,7 +71,6 @@ form[id="7411646"] {
     box-sizing: border-box !important;
 }
 
-/* THE FROSTED STATIONERY CARD - TIGHTER */
 form[id="7411646"] .form-all {
     background: rgba(41, 18, 2, 0.85) !important;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.55) !important;
@@ -88,7 +84,6 @@ form[id="7411646"] .form-all {
     -webkit-backdrop-filter: blur(5px);
 }
 
-/* SAFE FORM-LINE: Excludes all hidden/conditional states from forcing display */
 form[id="7411646"] .form-line:not(.hide):not(.hidden):not(.form-line-hidden):not(.form-field-hidden):not(.always-hidden):not([style*="none"]):not([data-type="control_hidden"]) {
     display: block !important;
     padding: 7px 0 !important;
@@ -101,7 +96,6 @@ form[id="7411646"] .form-required {
     display: none !important;
 }
 
-/* --- RSVP IMAGE / TOP HTML AREA --- */
 html:has(form[id="7411646"]) div:has(> img[alt="Bourbon Tasting"]) {
     margin: 0 0 10px 0 !important;
     padding: 0 !important;
@@ -125,7 +119,6 @@ html:has(form[id="7411646"]) img[alt="Bourbon Tasting"] {
     margin: 0 auto !important;
 }
 
-/* --- 2. Headings & Field Names --- */
 form[id="7411646"] .form-header {
     color: #a67c33 !important;
     border-bottom: 1px solid #d9cbb8 !important;
@@ -171,7 +164,6 @@ form[id="7411646"] .form-sub-label {
     font-weight: normal !important;
 }
 
-/* --- 3. Inputs --- */
 form[id="7411646"] .form-input,
 form[id="7411646"] .form-input-wide {
     clear: both !important;
@@ -215,7 +207,6 @@ form[id="7411646"] #input_15 {
     font-weight: 600 !important;
 }
 
-/* --- 4. Side-by-Side Flex Layout (With Conditional Exclusions) --- */
 form[id="7411646"] #cid_1:not(.hide):not(.form-line-hidden):not([style*="none"]),
 form[id="7411646"] #cid_17:not(.hide):not(.form-line-hidden):not([style*="none"]),
 form[id="7411646"] #cid_18:not(.hide):not(.form-line-hidden):not([style*="none"]),
@@ -245,7 +236,6 @@ form[id="7411646"] .form-sub-label-container label.form-sub-label {
     order: 2 !important;
 }
 
-/* Address table */
 form[id="7411646"] .form-address-table {
     width: 100% !important;
     display: block !important;
@@ -273,7 +263,6 @@ form[id="7411646"] .form-address-table td {
     min-width: 0 !important;
 }
 
-/* --- 5. Radio Buttons & Checkboxes (With Conditional Exclusions) --- */
 form[id="7411646"] .form-single-column:not(.hide):not(.form-line-hidden):not([style*="none"]),
 form[id="7411646"] .form-multiple-column:not(.hide):not(.form-line-hidden):not([style*="none"]) {
     display: flex !important;
@@ -325,9 +314,6 @@ form[id="7411646"] .form-checkbox-item label {
     align-items: center !important;
 }
 
-/* =========================================================
-   "OTHER" CHECKBOX
-========================================================= */
 form[id="7411646"] .form-checkbox-item:has(.form-checkbox-other) {
     position: relative !important;
     display: flex !important;
@@ -396,14 +382,12 @@ form[id="7411646"] .form-checkbox-other-input {
     position: relative !important;
 }
 
-/* Typed amount color */
 form[id="7411646"] .form-checkbox-other-input,
 form[id="7411646"] input#input_13 {
     color: #a67c33 !important;
     font-weight: 700 !important;
 }
 
-/* Placeholder "Other" color */
 form[id="7411646"] .form-checkbox-other-input::placeholder,
 form[id="7411646"] input#input_13::placeholder {
     color: #a67c33 !important;
@@ -411,28 +395,6 @@ form[id="7411646"] input#input_13::placeholder {
     font-weight: 700 !important;
 }
 
-form[id="7411646"] .form-checkbox-other-input::-webkit-input-placeholder,
-form[id="7411646"] input#input_13::-webkit-input-placeholder {
-    color: #a67c33 !important;
-    opacity: 1 !important;
-    font-weight: 700 !important;
-}
-
-form[id="7411646"] .form-checkbox-other-input::-moz-placeholder,
-form[id="7411646"] input#input_13::-moz-placeholder {
-    color: #a67c33 !important;
-    opacity: 1 !important;
-    font-weight: 700 !important;
-}
-
-form[id="7411646"] .form-checkbox-other-input:-ms-input-placeholder,
-form[id="7411646"] input#input_13:-ms-input-placeholder {
-    color: #a67c33 !important;
-    opacity: 1 !important;
-    font-weight: 700 !important;
-}
-
-/* --- 6. Total Box --- */
 form[id="7411646"] #cid_7:not(.hide):not(.form-line-hidden):not([style*="none"]) {
     display: flex !important;
     flex-direction: row !important;
@@ -459,7 +421,6 @@ form[id="7411646"] #total_amount {
     padding: 0 !important;
 }
 
-/* --- 7. Payment / Credit Card Fields --- */
 form[id="7411646"] .js-cc-number {
     padding-left: 15px !important;
     background-image: none !important;
@@ -511,13 +472,6 @@ form[id="7411646"] .other {
     line-height: 1.45 !important;
 }
 
-form[id="7411646"] .credit_card input.form-textbox {
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    color: #333 !important;
-}
-
-/* --- 8. Submit Button --- */
 form[id="7411646"] .form-buttons-wrapper {
     display: flex !important;
     justify-content: center !important;
@@ -547,7 +501,6 @@ form[id="7411646"] .form-submit-button:hover {
     transform: translateY(-1px) !important;
 }
 
-/* --- 9. Newsletter Checkbox --- */
 form[id="7411646"] #cid_4 .form-checkbox-item {
     border: none !important;
     background: transparent !important;
@@ -580,208 +533,38 @@ form[id="7411646"] .form-radio-item:has(input.paymentMethod) {
     margin: 0 !important;
 }
 
-/* --- 10. Mobile Fixes --- */
 @media (max-width: 600px) {
     form[id="7411646"] {
         padding-left: 8px !important;
         padding-right: 8px !important;
     }
-
     form[id="7411646"] .form-all {
         padding: 16px 12px 22px !important;
         border-radius: 12px !important;
         margin: 10px auto !important;
     }
-
     form[id="7411646"] .form-line {
         padding: 6px 0 !important;
     }
-
-    form[id="7411646"] [id^="label_"] > label,
-    form[id="7411646"] label[for^="input_"]:not(.form-sub-label),
-    form[id="7411646"] .form-label-left > label,
-    form[id="7411646"] .form-label-top > label {
-        font-size: 17px !important;
-        margin-bottom: 2px !important;
-    }
-
-    form[id="7411646"] .label-message {
-        margin-bottom: 5px !important;
-        line-height: 1.3 !important;
-    }
-
-    html:has(form[id="7411646"]) div:has(> img[alt="Bourbon Tasting"]) {
-        margin: 0 0 8px 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-    }
-
-    html:has(form[id="7411646"]) div:has(> img[alt="Bourbon Tasting"]) > div:first-child {
-        font-size: 20px !important;
-        letter-spacing: 1.5px !important;
-        margin: 0 0 7px 0 !important;
-    }
-
-    html:has(form[id="7411646"]) img[alt="Bourbon Tasting"]{
-        width: 100% !important;
-        max-width: 100% !important;
-        border-radius: 10px !important;
-    }
-
-    form[id="7411646"] #cid_1:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_17:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_18:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_19:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_20:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_21:not(.hide):not([style*="none"]),
-    form[id="7411646"] #cid_22:not(.hide):not([style*="none"]) {
-        gap: 8px !important;
-    }
-
-    form[id="7411646"] .form-radio-item,
-    form[id="7411646"] .form-checkbox-item {
-        min-height: 40px !important;
-    }
-
-    form[id="7411646"] .form-radio-item label,
-    form[id="7411646"] .form-checkbox-item label {
-        padding: 9px 14px 9px 10px !important;
-        font-size: 15px !important;
-    }
-
-    form[id="7411646"] input.form-radio,
-    form[id="7411646"] input.form-checkbox {
-        margin-left: 12px !important;
-    }
-
-    form[id="7411646"] .form-checkbox-item:has(.form-checkbox-other) span {
-        margin-left: 44px !important;
-    }
-
-    form[id="7411646"] input.form-checkbox-other::before {
-        left: 12px !important;
-    }
-
-    /* Credit-card address: City + State on one line, Zip + Country on one line */
-    form[id="7411646"] .form-address-table tbody {
-        gap: 6px !important;
-    }
-
     form[id="7411646"] .form-address-table tr:not(.hide):not([style*="none"]) {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
         gap: 8px !important;
-        width: 100% !important;
     }
-
-    form[id="7411646"] .form-address-table td {
-        flex: 1 1 0 !important;
-        min-width: 0 !important;
-        width: auto !important;
-    }
-
-    form[id="7411646"] .form-address-table .form-textbox,
-    form[id="7411646"] .form-address-table .form-dropdown {
-        min-width: 0 !important;
-        padding-left: 9px !important;
-        padding-right: 9px !important;
-        font-size: 14px !important;
-    }
-
-    form[id="7411646"] .credit_card:not(.hide):not([style*="none"]) > td > table {
-        padding: 12px !important;
-        gap: 8px !important;
-        margin-top: 5px !important;
-    }
-
-    form[id="7411646"] .credit_card:not(.hide) > td > table > tbody {
-        gap: 8px !important;
-    }
-
     form[id="7411646"] .credit_card:not(.hide) > td > table > tbody > tr:not(.hide):not([style*="none"]) {
         flex-wrap: wrap !important;
         gap: 8px !important;
     }
-
     form[id="7411646"] .credit_card td:has(.js-cc-number),
-    form[id="7411646"] .credit_card td:has([id*="cc_ccv"]),
-    form[id="7411646"] .credit_card td:has([name*="ccv"]),
     form[id="7411646"] .credit_card td:has([autocomplete="cc-csc"]) {
         flex: 0 0 100% !important;
         width: 100% !important;
     }
-
-    form[id="7411646"] .form-single-column:has(input.paymentMethod):not(.hide):not([style*="none"]),
-    form[id="7411646"] .form-multiple-column:has(input.paymentMethod):not(.hide):not([style*="none"]) {
+    form[id="7411646"] .form-single-column:has(input.paymentMethod),
+    form[id="7411646"] .form-multiple-column:has(input.paymentMethod) {
         flex-direction: column !important;
-        gap: 6px !important;
-    }
-
-    form[id="7411646"] #cid_7:not(.hide):not([style*="none"]) {
-        padding: 12px 14px !important;
-    }
-
-    form[id="7411646"] #total_amount {
-        font-size: 24px !important;
-    }
-
-    form[id="7411646"] .form-buttons-wrapper {
-        margin-top: 16px !important;
     }
 }
-
-/* Mobile-only fix for the Donation "Other" checkbox */
-@media (max-width: 600px) {
-    form[id="7411646"] .form-checkbox-item:has(input.form-checkbox-other) {
-        position: relative !important;
-        overflow: hidden !important;
-    }
-
-    form[id="7411646"] input.form-checkbox-other,
-    form[id="7411646"] input.form-checkbox.form-checkbox-other {
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        border: 0 !important;
-        outline: 0 !important;
-        box-shadow: none !important;
-        background: transparent !important;
-    }
-
-    form[id="7411646"] input.form-checkbox-other:focus,
-    form[id="7411646"] input.form-checkbox-other:active,
-    form[id="7411646"] input.form-checkbox-other:checked {
-        outline: 0 !important;
-        box-shadow: none !important;
-        border: 0 !important;
-    }
-
-    form[id="7411646"] input.form-checkbox-other::before,
-    form[id="7411646"] input.form-checkbox.form-checkbox-other::before {
-        left: 12px !important;
-        top: 50% !important;
-        margin: 0 !important;
-        transform: translateY(-50%) !important;
-    }
-
-    form[id="7411646"] .form-checkbox-item:has(input.form-checkbox-other) span {
-        margin-left: 44px !important;
-    }
-
-    form[id="7411646"] .form-checkbox-item:has(input.form-checkbox-other) .form-checkbox-other-input {
-        margin-left: 0 !important;
-    }
-
-    form[id="7411646"] .form-checkbox-item:has(input.form-checkbox-other:checked) {
-        border-color: #cfc2b4 !important;
-        box-shadow: none !important;
-    }
-}
-
 
 /* =========================================================
    MODERN FORM STYLING - CHABADONE
@@ -823,29 +606,6 @@ html:has(form[id="7421598"]) body {
     overflow-x: hidden !important;
 }
 
-/* THE MASTER UN-FLOAT: Strips ChabadOne's legacy left-aligned wrappers */
-html:has(form[id="7421598"]) #content,
-html:has(form[id="7421598"]) #BodyContainer,
-html:has(form[id="7421598"]) .body_wrapper,
-html:has(form[id="7421598"]) #co_content_container,
-html:has(form[id="7421598"]) .master-content-wrapper,
-html:has(form[id="7421598"]) #co_body_container,
-html:has(form[id="7421598"]) #ContentBody,
-html:has(form[id="7421598"]) .content-area-parent,
-html:has(form[id="7421598"]) #cco_body,
-html:has(form[id="7421598"]) article.content,
-html:has(form[id="7421598"]) #formContainer {
-    width: 100% !important;
-    max-width: 100% !important;
-    float: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box !important;
-}
-
-/* Center the form block */
 form[id="7421598"] {
     font-family: 'Montserrat', 'Open Sans', Arial, sans-serif !important;
     color: #333 !important;
@@ -858,7 +618,6 @@ form[id="7421598"] {
     box-sizing: border-box !important;
 }
 
-/* THE FROSTED STATIONERY CARD - SLIMMER PADDING */
 form[id="7421598"] .form-all {
     background: rgba(41, 18, 2, 0.85) !important;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.55) !important;
@@ -872,7 +631,6 @@ form[id="7421598"] .form-all {
     -webkit-backdrop-filter: blur(5px);
 }
 
-/* SAFE FORM-LINE: Tighter vertical row spacing (4px top/bottom) */
 form[id="7421598"] .form-line:not(.hide):not(.hidden):not(.form-line-hidden):not(.form-field-hidden):not(.always-hidden):not([style*="none"]):not([data-type="control_hidden"]) {
     display: block !important;
     padding: 4px 0 !important;
@@ -885,7 +643,6 @@ form[id="7421598"] .form-required {
     display: none !important;
 }
 
-/* --- 2. Top HTML Area & Image Styling --- */
 form[id="7421598"] .bourbon-rsvp-top {
     width: 100% !important;
     margin: 0 0 6px 0 !important;
@@ -893,17 +650,6 @@ form[id="7421598"] .bourbon-rsvp-top {
     text-align: center !important;
 }
 
-/* Neutralize rogue paragraph tags or breaks inside the HTML block */
-form[id="7421598"] .bourbon-rsvp-top p {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-form[id="7421598"] .bourbon-rsvp-top br {
-    display: none !important;
-}
-
-/* Image Styling */
 html:has(form[id="7421598"]) img[alt="Bourbon Tasting"],
 form[id="7421598"] .bourbon-event-image {
     display: block !important;
@@ -912,39 +658,10 @@ form[id="7421598"] .bourbon-event-image {
     height: auto !important;
     border-radius: 12px !important;
     margin: 0 auto !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    user-select: none !important;
-    -webkit-user-select: none !important;
 }
 
-/* Sold Out Header Text Enhancement */
-form[id="7421598"] #text_12 p {
-    margin: 0 !important;
-    line-height: 1.2 !important;
-}
-
-form[id="7421598"] #text_12 span {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
-    letter-spacing: 0.5px !important;
-}
-
-/* --- 3. Labels & Inputs - COMPACT --- */
-form[id="7421598"] .form-label,
-form[id="7421598"] .form-label-left,
-form[id="7421598"] .form-label-top {
-    width: 100% !important;
-    max-width: 100% !important;
-    float: none !important;
-    display: block !important;
-    box-sizing: border-box !important;
-}
-
-/* Closer labels with slightly sleeker 16px font size */
 form[id="7421598"] [id^="label_"] > label,
-form[id="7421598"] label[for^="input_"]:not(.form-sub-label),
-form[id="7421598"] .form-label-left > label,
-form[id="7421598"] .form-label-top > label {
+form[id="7421598"] label[for^="input_"]:not(.form-sub-label) {
     color: #a67c33 !important;
     font-weight: 700 !important;
     font-size: 16px !important;
@@ -952,19 +669,6 @@ form[id="7421598"] .form-label-top > label {
     display: block !important;
 }
 
-form[id="7421598"] .label-message {
-    display: none !important;
-}
-
-form[id="7421598"] .form-input,
-form[id="7421598"] .form-input-wide {
-    clear: both !important;
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-/* Thinner 38px height textboxes */
 form[id="7421598"] .form-textbox {
     width: 100% !important;
     height: 38px !important;
@@ -973,20 +677,9 @@ form[id="7421598"] .form-textbox {
     border-radius: 6px !important;
     box-sizing: border-box !important;
     font-size: 15px !important;
-    font-weight: 400 !important;
-    color: #333 !important;
     background-color: #fff !important;
-    transition: all 0.3s ease !important;
-    box-shadow: none !important;
-    outline: none !important;
 }
 
-form[id="7421598"] .form-textbox:focus {
-    border-color: #c99b53 !important;
-    box-shadow: 0 0 0 3px rgba(201, 155, 83, 0.25) !important;
-}
-
-/* --- 3b. Side-by-Side Fields Fix (Full Name, Phone, etc.) --- */
 form[id="7421598"] [id^="cid_"]:has(.form-sub-label-container) {
     display: flex !important;
     flex-direction: row !important;
@@ -1000,30 +693,6 @@ form[id="7421598"] .form-sub-label-container {
     flex-direction: column !important;
     flex: 1 1 0 !important;
     min-width: 140px !important;
-    margin: 0 !important;
-}
-
-form[id="7421598"] .form-sub-label-container input,
-form[id="7421598"] .form-sub-label-container select {
-    order: 1 !important;
-    width: 100% !important;
-}
-
-/* Tighter sub-label margin */
-form[id="7421598"] .form-sub-label-container label.form-sub-label {
-    order: 2 !important;
-    margin-top: 2px !important;
-    font-size: 11px !important;
-}
-
-/* --- 4. Submit Button - COMPACT --- */
-form[id="7421598"] .form-buttons-wrapper {
-    display: flex !important;
-    justify-content: center !important;
-    width: 100% !important;
-    margin: 8px 0 0 0 !important;
-    padding: 0 !important;
-    text-indent: 0 !important;
 }
 
 form[id="7421598"] .form-submit-button {
@@ -1037,50 +706,10 @@ form[id="7421598"] .form-submit-button {
     cursor: pointer !important;
     width: 100% !important;
     max-width: 320px !important;
-    transition: filter 0.3s ease, transform 0.1s ease !important;
-    box-shadow: 0 4px 15px rgba(201, 155, 83, 0.35) !important;
 }
 
-form[id="7421598"] .form-submit-button:hover {
-    filter: brightness(1.12) !important;
-    transform: translateY(-1px) !important;
-}
-
-/* --- 5. Mobile Responsiveness --- */
 @media (max-width: 600px) {
-    form[id="7421598"] {
-        padding-left: 6px !important;
-        padding-right: 6px !important;
-    }
-
     form[id="7421598"] .form-all {
         padding: 14px 14px 18px !important;
-        border-radius: 12px !important;
-        margin: 10px auto !important;
-    }
-
-    form[id="7421598"] .form-line:not(.hide):not(.form-line-hidden) {
-        padding: 4px 0 !important;
-    }
-
-    form[id="7421598"] [id^="label_"] > label,
-    form[id="7421598"] label[for^="input_"]:not(.form-sub-label) {
-        font-size: 15px !important;
-        margin-bottom: 2px !important;
-    }
-
-    form[id="7421598"] .form-textbox {
-        height: 36px !important;
-        font-size: 14px !important;
-    }
-
-    form[id="7421598"] [id^="cid_"]:has(.form-sub-label-container) {
-        gap: 8px !important;
-    }
-
-    form[id="7421598"] .form-submit-button {
-        font-size: 16px !important;
-        padding: 11px 25px !important;
-        max-width: 100% !important;
     }
 }
